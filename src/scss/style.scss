@@ -1,0 +1,60 @@
+@import 'normalize';
+@import 'foundation';
+
+a {
+  text-decoration: none;
+}
+
+ul {
+  margin: 0;
+  padding: 0;
+}
+
+.ba-header {
+  height: 91px;
+  background: url(../img/header-bg.jpg) no-repeat;
+  background-size: cover;
+  border-bottom: 5px solid #b8b8b8;
+}
+
+.ba-nav {
+  position: relative;
+  $nav-bg-img: url(../img/menu-bg.png);
+  background-image: $nav-bg-img;
+
+  &:after {
+    content: '';
+    display: block;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 100%;
+    width: 1000%;
+    background-image: $nav-bg-img;
+  }
+}
+
+.ba-logo {
+  position: relative;
+  width: 209px;
+  background-color: $primary-color;
+
+  &:before {
+    content: '';
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    right: 100%;
+    width: 1000%;
+    background-color: $primary-color;
+  }
+
+  &__link {
+    display: inline-block;
+  }
+
+  &__img {
+    margin-top: 3px;
+    vertical-align: top;
+  }
+}
