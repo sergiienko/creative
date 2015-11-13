@@ -13,36 +13,219 @@
 </head>
 <body>
 
+<svg class="ba-hidden">
+<defs>
+  <symbol id="icon-fb">
+    <path d="M8.719,24.076 C8.719,24.076 4.119,24.076 4.119,24.076 C4.119,24.076 4.119,12.942 4.119,12.942 C4.119,12.942 1.821,12.942 1.821,12.942 C1.821,12.942 1.821,9.106 1.821,9.106 C1.821,9.106 4.119,9.106 4.119,9.106 C4.119,9.106 4.119,6.802 4.119,6.802 C4.119,3.673 5.417,1.811 9.103,1.811 C9.103,1.811 12.173,1.811 12.173,1.811 C12.173,1.811 12.173,5.649 12.173,5.649 C12.173,5.649 10.255,5.649 10.255,5.649 C8.819,5.649 8.725,6.185 8.725,7.186 C8.725,7.186 8.719,9.106 8.719,9.106 C8.719,9.106 12.195,9.106 12.195,9.106 C12.195,9.106 11.788,12.942 11.788,12.942 C11.788,12.942 8.719,12.942 8.719,12.942 C8.719,12.942 8.719,24.076 8.719,24.076 C8.719,24.076 8.719,24.076 8.719,24.076 Z"></path>
+  </symbol>
+  <symbol id="icon-tw">
+    <path d="M27.137,9.949 C26.248,10.100 24.958,9.942 24.275,9.658 C25.695,9.541 26.656,8.895 27.026,8.019 C26.515,8.334 24.925,8.677 24.049,8.350 C24.005,8.144 23.957,7.948 23.909,7.771 C23.242,5.313 20.952,3.333 18.554,3.573 C18.747,3.494 18.944,3.421 19.142,3.355 C19.404,3.260 20.954,3.008 20.710,2.461 C20.504,1.979 18.611,2.823 18.255,2.935 C18.725,2.758 19.503,2.454 19.586,1.912 C18.866,2.011 18.158,2.352 17.612,2.848 C17.809,2.636 17.959,2.377 17.990,2.098 C16.068,3.328 14.944,5.805 14.036,8.210 C13.323,7.517 12.689,6.972 12.122,6.669 C10.530,5.815 8.627,4.924 5.640,3.813 C5.548,4.802 6.128,6.119 7.800,6.993 C7.438,6.944 6.776,7.054 6.247,7.179 C6.462,8.314 7.167,9.248 9.076,9.699 C8.203,9.756 7.752,9.956 7.344,10.383 C7.741,11.172 8.712,12.099 10.454,11.909 C8.515,12.746 9.663,14.295 11.242,14.064 C8.551,16.848 4.307,16.641 1.870,14.315 C8.232,22.993 22.062,19.446 24.122,11.088 C25.668,11.101 26.574,10.553 27.137,9.949 Z"></path>
+  </symbol>
+  <symbol id="icon-rss">
+    <path d="M1.573,10.200 C3.552,10.200 5.412,10.973 6.809,12.378 C8.209,13.784 8.980,15.656 8.980,17.649 C8.980,17.649 12.028,17.649 12.028,17.649 C12.028,11.861 7.338,7.151 1.573,7.151 C1.573,7.151 1.573,10.200 1.573,10.200 ZM1.578,4.796 C8.629,4.796 14.365,10.563 14.365,17.652 C14.365,17.652 17.414,17.652 17.414,17.652 C17.414,8.882 10.310,1.747 1.578,1.747 C1.578,1.747 1.578,4.796 1.578,4.796 ZM5.794,15.523 C5.794,16.689 4.848,17.634 3.682,17.634 C2.516,17.634 1.571,16.689 1.571,15.523 C1.571,14.357 2.516,13.412 3.682,13.412 C4.848,13.412 5.794,14.357 5.794,15.523 Z"></path>
+  </symbol>
+</defs>
+</svg>
 
 <header class="ba-header">
   <div class="row">
     <div class="columns">
-      <nav class="top-bar ba-nav" data-topbar role="navigation">
-        <ul class="title-area ba-logo">
-          <li class="name">
-            <a class="ba-logo__link" href="#">
-              <img class="ba-logo__img" src="img/logo.png" alt="Creative">
-            </a>
-          </li>
-          <li class="toggle-topbar menu-icon"><a href="#"><span></span></a></li>
-        </ul>
-
-        <section class="top-bar-section">
-          <ul class="left">
-            <li><a href="#">Articles</a></li>
-            <li><a href="#">Tutorials</a></li>
-            <li><a href="#">Design</a></li>
-            <li><a href="#">Web design</a></li>
-            <li><a href="#">Other</a></li>
-            <li><a href="#">Contact</a></li>
+      <div class="ba-header__wrapper">
+        <nav class="top-bar ba-nav" data-topbar role="navigation">
+          <ul class="title-area">
+            <li class="name ba-logo">
+              <a class="ba-logo__link" href="#">
+                <img class="ba-logo__img" src="img/logo.png" alt="Creative">
+              </a>
+            </li>
+            <li class="toggle-topbar menu-icon"><a href="#"><span></span></a></li>
           </ul>
-        </section>
-      </nav>
+
+          <section class="top-bar-section">
+            <ul class="left">
+              <li><a href="#">Articles</a></li>
+              <li><a href="#">Tutorials</a></li>
+              <li><a href="#">Design</a></li>
+              <li><a href="#">Web design</a></li>
+              <li><a href="#">Other</a></li>
+              <li><a href="#">Contact</a></li>
+            </ul>
+          </section>
+        </nav>
+      </div>
+      <!-- /.ba-header__wrapper -->
     </div>
   </div>
   <!-- /.row -->
 </header>
 <!-- /.ba-header -->
+
+<main class="ba-main" role="main">
+  <div class="row">
+    <div class="columns small-12 medium-8">
+      <div class="ba-post">
+        <div class="ba-post__img-wrapper">
+          <img class="ba-post__img" src="img/post/post-1.jpg" alt="Post 1">
+          <div class="ba-share">
+            <a href="#">
+              <svg viewBox="0 0 14 26">
+                <use xlink:href="#icon-fb"></use>
+              </svg>
+            </a>
+            <a href="#">
+              <svg viewBox="0 0 29 21">
+                <use xlink:href="#icon-tw"></use>
+              </svg>
+            </a>
+          </div>
+        </div>
+        <div class="ba-post__excerpt">
+          <h2 class="ba-post__title">Roundup: 20 web designs with large backgrounds</h2>
+          <time class="ba-post__date" datetime="2012-04-19">19th April 2012</time>
+          <h4 class="ba-post__subtitle">Sub heading to go here</h4>
+          <p class="ba-post__text">Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Vestibulum scelerisque dignissim massa, sed gravida nisi sollicitudin vel. Sed nec erat feugiat orci hendrerit ultricies et sit amet lectus. Sed eget tellus sapien. Proin vel mi nibh, id ultrices metus. Donec bibendum dolor at ante lacinia blandit. Vivamus rhoncus mattis sem ut hendrerit.</p>
+        </div>
+        <!-- /.ba-post__excerpt -->
+      </div>
+      <!-- /.ba-post -->
+
+      <div class="row">
+        <div class="columns small-12 medium-6">
+          <div class="ba-post">
+            <div class="ba-post__img-wrapper">
+              <img class="ba-post__img" src="img/post/post-1-small.jpg" alt="Post 1">
+            </div>
+            <div class="ba-post__excerpt">
+              <h3 class="ba-post__title">Roundup: 20 web designs with large backgrounds</h3>
+              <time class="ba-post__date" datetime="2012-04-19">19th April 2012</time>
+              <p class="ba-post__text">Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Vestibulum scelerisque dignissim massa, sed gravida nisi sollicitudin vel. Sed nec</p>
+            </div>
+            <!-- /.ba-post__excerpt -->
+          </div>
+          <!-- /.ba-post -->
+        </div>
+        <!-- /.columns small-12 medium-6 -->
+        <div class="columns small-12 medium-6">
+          <div class="ba-post">
+            <div class="ba-post__img-wrapper">
+              <img class="ba-post__img" src="img/post/post-2-small.jpg" alt="Post 1">
+            </div>
+            <div class="ba-post__excerpt">
+              <h3 class="ba-post__title">Roundup: 20 web designs with large backgrounds</h3>
+              <time class="ba-post__date" datetime="2012-04-19">19th April 2012</time>
+              <p class="ba-post__text">Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Vestibulum scelerisque dignissim massa, sed gravida nisi sollicitudin vel. Sed nec</p>
+            </div>
+            <!-- /.ba-post__excerpt -->
+          </div>
+          <!-- /.ba-post -->
+        </div>
+        <!-- /.columns small-12 medium-6 -->
+      </div>
+      <!-- /.row -->
+    </div>
+    <!-- /.columns small-12 medium-8 -->
+
+    <div class="columns medium-4 hide-for-small">
+      <aside class="ba-sidebar">
+        <div class="ba-widget">
+          <h3 class="ba-widget__title">Creative+ Design Blog</h3>
+          <span class="ba-widget__by-line">Your Bi-line to go here</span>
+          <p class="ba-widget__text">Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Vestibulum scelerisque dignissim massa, sed gravida nisi sollicitudin vel. Sed nec erat feugiat orci hendrerit ultricies et sit amet lectus. Sed eget tellus sapien. Proin vel mi nibh, id ultrices metus. Donec bibendum dolor at ante lacinia blandit. Vivamus rhoncus mattis sem ut hendrerit. </p>
+        </div>
+        <!-- /.ba-widget -->
+        <div class="ba-widget">
+          <h3 class="ba-widget__title">Recent Updates</h3>
+          <form class="ba-subscribe" action="" method="post">
+            <fieldset class="row collapse">
+              <div class="columns small-8">
+                <input type="email" name="email" placeholder="Leave Your Email here">
+              </div>
+              <div class="columns small-4">
+                <a href="#" class="ba-button button medium secondary radius">Join</a>
+              </div>
+            </fieldset>
+          </form>
+          <p class="ba-widget__text ba-widget__text_subscription">Ut eget metus nibh, nec scelerisque sem. Nulla dui purus, pellentesque sit amet rutrum vitae.</p>
+        </div>
+        <!-- /.ba-widget -->
+        <div class="ba-widget">
+          <h3 class="ba-widget__title">Recent Post</h3>
+          <ul class="ba-post-list">
+            <li class="ba-widget-post">
+              Ut eget metus nibh, nec scelerisque sem. Nulla dui purus, pellentesque sit amet rutrum
+              <time class="ba-widget-post__date" datetime="2012-04-19">19th April 2012</time>
+            </li>
+            <li class="ba-widget-post">
+              Fusce augue arcu, volutpat eu facilisis suscipit, venenatis vehicula diam.
+              <time class="ba-widget-post__date" datetime="2012-04-19">19th April 2012</time>
+            </li>
+            <li class="ba-widget-post">
+              Ut eget metus nibh, nec scelerisque sem. Nulla dui purus, pellentesque sit amet rutrum
+              <time class="ba-widget-post__date" datetime="2012-04-19">19th April 2012</time>
+            </li>
+          </ul>
+        </div>
+        <!-- /.ba-widget -->
+        <div class="ba-widget">
+          <h3 class="ba-widget__title">Popular Tags</h3>
+          <a class="ba-button button small radius secondary" href="#">Cat</a>
+          <a class="ba-button button small radius secondary" href="#">Dogs</a>
+          <a class="ba-button button small radius secondary" href="#">Cat</a>
+          <a class="ba-button button small radius secondary" href="#">Dogs</a>
+          <a class="ba-button button small radius secondary" href="#">Category</a>
+          <a class="ba-button button small radius secondary" href="#">Cat here</a>
+        </div>
+      </aside>
+      <!-- /.ba-widget -->
+    </div>
+    <!-- /.columns medium-4 hide-for-small -->
+
+  </div>
+  <!-- /.row -->
+</main>
+<!-- /.ba-main -->
+
+<footer class="ba-footer">
+  <div class="row">
+    <div class="columns small-12 medium-6">
+      <p class="ba-footer__text">Quisque turpis lorem, vehicula eget rhoncus vel, ultricies ac mauris. Morbi lectus velit, tincidunt congue pharetra eu, varius nec libero. Vivamus justo risus, dignissim ac vestibulum eget, egestas rutrum magna. Etiam malesuada nisi et nisl volutpat tristique.</p>
+      <div class="ba-footer__social">
+        <a href="#">
+          <svg viewBox="0 0 14 26">
+            <use xlink:href="#icon-fb"></use>
+          </svg>
+        </a>
+        <a href="#">
+          <svg viewBox="0 0 29 21">
+            <use xlink:href="#icon-tw"></use>
+          </svg>
+        </a>
+        <a href="#">
+          <svg viewBox="0 0 19 19">
+            <use xlink:href="#icon-rss"></use>
+          </svg>
+        </a>
+      </div>
+      <p class="ba-footer__copyright">Copyright 2012 Footer here</p>
+    </div>
+    <!-- /.columns small-12 medium-6 -->
+    <div class="columns small-12 medium-6">
+      <form class="ba-subscribe ba-subscribe_footer" action="" method="post">
+        <fieldset class="row collapse">
+          <div class="columns small-8">
+            <input type="email" name="email" placeholder="Leave Your Email here">
+          </div>
+          <div class="columns small-4 ba-subscribe__postfix">
+            <a href="#" class="ba-button button medium radius">Join</a>
+          </div>
+        </fieldset>
+      </form>
+    </div>
+    <!-- /.columns small-12 medium-6 -->
+  </div>
+  <!-- /.row -->
+</footer>
+<!-- /.ba-footer -->
 
   <script src="js/vendor/modernizr.js"></script>
   <script src="js/vendor/jquery.js"></script>
