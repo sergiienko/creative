@@ -69,7 +69,14 @@
   }
 }
 
-@mixin social($direction: horizontal, $gutter: 12px) {
+@mixin social(
+    $direction: horizontal, 
+    $gutter: 12px,
+    $border-radius: 50%,
+    $bg-color: $primary-color,
+    $hover-bg-color: transparent,
+    $icon-color: $white) {
+
   font-size: 0;
 
   a {
@@ -85,19 +92,19 @@
     width: 49px;
     height: 49px;
     line-height: 49px;
-    border: 1px solid $primary-color;
-    border-radius: 50%;
-    background-color: $primary-color;
+    border: 1px solid $bg-color;
+    border-radius: $border-radius;
+    background-color: $bg-color;
     text-align: center;
 
     &:hover {
-      background-color: transparent;
+      background-color: $hover-bg-color;
     }
 
     svg {
       display: inline-block;
       vertical-align: middle;
-      fill: $white;
+      fill: $icon-color;
       height: 24px;
     }
   }

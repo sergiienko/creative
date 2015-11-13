@@ -208,3 +208,20 @@ ul {
     opacity: .5;
   }
 }
+
+.ba-social-bar {
+  @include social(
+    $direction: vertical,
+    $gutter: 0,
+    $border-radius: 0,
+    $bg-color: #f3795d,
+    $hover-bg-color: #d9654d,
+    $icon-color: #bb341b);
+
+  position: fixed;
+  top: 20%;
+  left: 0;
+  // border-top-right-radius: 3px;
+  border-radius: 0 $global-radius $global-radius 0;
+  overflow: hidden;
+}
