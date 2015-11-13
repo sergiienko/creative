@@ -79,9 +79,9 @@ $include-html-global-classes: $include-html-classes;
 // $include-html-grid-classes: $include-html-classes;
 // $include-xl-html-grid-classes: false;
 
-$row-width: rem-calc(980);
+$row-width: rem-calc(1005);
 // $total-columns: 12;
-// $column-gutter: rem-calc(30);
+$column-gutter: rem-calc(25);
 
 // c. Global
 // - - - - - - - - - - - - - - - - - - - - - - - - -
@@ -117,7 +117,7 @@ $font-weight-bold: bold;
 
 // We use these as default colors throughout
 $primary-color: #f26c4f;
-// $secondary-color: #e7e7e7;
+$secondary-color: #d9d9d9;
 // $alert-color: #f04124;
 // $success-color: #43AC6A;
 // $warning-color: #f08a24;
@@ -211,9 +211,9 @@ $body-font-family: Helvetica, Arial, sans-serif;
 
 // We use these to control header font styles
 // $header-font-family: $body-font-family;
-// $header-font-weight: $font-weight-normal;
+$header-font-weight: $font-weight-bold;
 // $header-font-style: normal;
-// $header-font-color: $jet;
+$header-font-color: #3a3e3f;
 // $header-line-height: 1.4;
 // $header-top-margin: .2rem;
 // $header-bottom-margin: .5rem;
@@ -221,9 +221,9 @@ $body-font-family: Helvetica, Arial, sans-serif;
 
 // We use these to control header font sizes
 // $h1-font-size: rem-calc(44);
-// $h2-font-size: rem-calc(37);
-// $h3-font-size: rem-calc(27);
-// $h4-font-size: rem-calc(23);
+$h2-font-size: rem-calc(30);
+$h3-font-size: rem-calc(16);
+$h4-font-size: rem-calc(15);
 // $h5-font-size: rem-calc(18);
 // $h6-font-size: 1rem;
 
@@ -249,8 +249,8 @@ $body-font-family: Helvetica, Arial, sans-serif;
 // We use these to style paragraphs
 // $paragraph-font-family: inherit;
 // $paragraph-font-weight: $font-weight-normal;
-// $paragraph-font-size: 1rem;
-// $paragraph-line-height: 1.6;
+$paragraph-font-size: rem-calc(12);
+$paragraph-line-height: 2;
 // $paragraph-margin-bottom: rem-calc(20);
 // $paragraph-aside-font-size: rem-calc(14);
 // $paragraph-aside-line-height: 1.35;
@@ -442,30 +442,30 @@ $body-font-family: Helvetica, Arial, sans-serif;
 
 // We use these to build padding for buttons.
 // $button-tny: rem-calc(10);
-// $button-sml: rem-calc(14);
-// $button-med: rem-calc(16);
+$button-sml: rem-calc(8);
+$button-med: rem-calc(10);
 // $button-lrg: rem-calc(18);
 
 // We use this to control the display property.
 // $button-display: inline-block;
-// $button-margin-bottom: rem-calc(20);
+$button-margin-bottom: rem-calc(2);
 
 // We use these to control button text styles.
 // $button-font-family: $body-font-family;
 // $button-font-color: $white;
-// $button-font-color-alt: $oil;
+$button-font-color-alt: #555;
 // $button-font-tny: rem-calc(11);
-// $button-font-sml: rem-calc(13);
-// $button-font-med: rem-calc(16);
+$button-font-sml: rem-calc(12);
+$button-font-med: rem-calc(14);
 // $button-font-lrg: rem-calc(20);
-// $button-font-weight: $font-weight-normal;
+$button-font-weight: $font-weight-bold;
 // $button-font-align: center;
 
 // We use these to control various hover effects.
 // $button-function-factor: -20%;
 
 // We use these to control button border styles.
-// $button-border-width: 0;
+$button-border-width: 1px;
 // $button-border-style: solid;
 // $button-bg-color: $primary-color;
 // $button-bg-hover: scale-color($button-bg-color, $lightness: $button-function-factor);

@@ -1,5 +1,16 @@
 @import 'normalize';
 @import 'foundation';
+@import 'mixin';
+
+$menu-bg-img: url(../img/menu-bg.png);
+$border-color: #d7d7d7;
+
+body {
+  color: #959595;
+}
+
+h1, h2, h3, h4, h5, h6 {
+}
 
 a {
   text-decoration: none;
@@ -10,44 +21,30 @@ ul {
   padding: 0;
 }
 
+.ba-hidden {
+  display: none;
+}
+
 .ba-header {
   height: 91px;
   background: url(../img/header-bg.jpg) no-repeat;
   background-size: cover;
   border-bottom: 5px solid #b8b8b8;
+  overflow: hidden;
+
+  &__wrapper {
+    @include has-ears($primary-color, $menu-bg-img);
+  }
 }
 
 .ba-nav {
-  position: relative;
-  $nav-bg-img: url(../img/menu-bg.png);
-  background-image: $nav-bg-img;
-
-  &:after {
-    content: '';
-    display: block;
-    position: absolute;
-    top: 0;
-    bottom: 0;
-    left: 100%;
-    width: 1000%;
-    background-image: $nav-bg-img;
-  }
+  background-image: $menu-bg-img;
 }
 
 .ba-logo {
   position: relative;
   width: 209px;
   background-color: $primary-color;
-
-  &:before {
-    content: '';
-    position: absolute;
-    top: 0;
-    bottom: 0;
-    right: 100%;
-    width: 1000%;
-    background-color: $primary-color;
-  }
 
   &__link {
     display: inline-block;
@@ -56,5 +53,158 @@ ul {
   &__img {
     margin-top: 3px;
     vertical-align: top;
+  }
+}
+
+.ba-main {
+  padding-top: 23px;
+}
+
+// Post
+
+.ba-post {
+  @include has-pages-under($border-color);
+
+  position: relative;
+  margin-bottom: 27px;
+
+  &__excerpt,
+  &__img-wrapper {
+    position: relative;
+    border: 1px solid $border-color;
+    padding: 7px;
+    background-color: $white;
+  }
+
+  &__excerpt {
+    @include has-up-arrow;
+    
+    padding: 40px;
+    margin-top: 8px;
+  }
+
+  &__title {
+    margin: 0;
+  }
+
+  &__date {
+    color: #aeaeae;
+    font-size: 11px;
+  }
+
+  &__subtitle {
+    color: $primary-color;
+  }
+
+  &__text {
+  }
+
+  &__img {
+    border: 1px solid $border-color;
+    width: 100%;
+  }
+}
+
+.ba-share {
+  @include social(vertical, 8px);
+
+  position: absolute;
+  left: 58px;
+  bottom: 24px;
+}
+
+// Sidebar 
+
+.ba-sidebar {
+  @include has-pages-under($border-color, 7px);
+
+  &:before {
+    border-width: 1px;
+  }
+
+  padding: 35px;
+  background-color: $white;
+  border: 1px solid $border-color;
+}
+
+.ba-widget {
+
+  &__by-line {
+    color: #aeaeae;
+    font-size: rem-calc(11);
+  }
+
+  &__text {
+    &_subscription {
+      color: #3a3a3a;
+      font-size: rem-calc(11);
+      font-style: italic;
+    }
+  }
+}
+
+.ba-post-list {
+  color: #3a3a3a;
+  font-style: italic;
+  padding-left: 15px;
+  list-style-image: url(../img/bullet.png);
+}
+
+.ba-widget-post {
+
+  &__date {
+    display: block;
+    color: #7e7e7e;
+    font-size: rem-calc(10);
+  }
+}
+
+.ba-button {
+  box-shadow: inset 0px -2px 1px -1px rgba(0,0,0,0.5),
+              inset 0px 1px 1px 0px rgba(255, 255, 255, 0.5);
+}
+
+.ba-subscribe {
+  
+  &_footer {
+    padding: 10px 20px 0 25px;
+  }
+
+  input[type='email'] {
+    display: inline-block;
+    font-size: rem-calc(11);
+    width: 100%;
+    border: 0;
+    margin: 0;
+    padding: 0 10px 0 27px;
+    background: url(../img/envelope.png) no-repeat 0 50%;
+    box-shadow: none;
+  }
+
+  fieldset {
+    border-radius: $global-radius;
+    padding: 7px 12px;
+    background-color: $white;
+    box-shadow: inset 0 1px 10px rgba(0, 0, 0, 0.1);
+  }
+
+  .ba-subscribe__postfix {
+    text-align: right;
+  }
+}
+
+.ba-footer {
+  color: $white;
+  margin-top: 18px;
+  padding: 50px 0 135px;
+  background-color: #343434;
+
+  &__social {
+    @include social;
+  }
+
+  &__copyright {
+    margin-top: 35px;
+    opacity: .5;
   }
 }

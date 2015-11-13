@@ -1,0 +1,104 @@
+
+@mixin has-ears($left-bg, $right-bg) {
+  position: relative;
+
+  &:before,
+  &:after {
+    content: '';
+    display: block;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    width: 1000%;
+  }
+
+  &:before {
+    right: 100%;
+    background: $left-bg;
+  }
+
+  &:after {
+    left: 100%;
+    background: $right-bg;
+  }
+}
+
+@mixin has-up-arrow {
+  position: relative;
+  
+  &:before {
+    content: '';
+    display: block;
+    position: absolute;
+    top: -11px;
+    left: 75px;
+    width: 21px;
+    height: 21px;
+    border: solid $border-color;
+    border-width: 1px 1px 0 0;
+    background-color: $white;
+    transform: rotate(-45deg);
+  }
+}
+
+@mixin has-pages-under($border-color, $height-1: 3px, $height-2: 3px) {
+  position: relative;
+
+  &:before,
+  &:after {
+    content: '';
+    display: block;
+    position: absolute;
+    border: solid $border-color;
+    border-width: 0 1px 1px;
+    background-color: $white;
+  }
+
+  &:before {
+    left: 6px;
+    right: 6px;
+    bottom: -1 * $height-1;
+    height: $height-1;
+  }
+
+  &:after {
+    left: 11px;
+    right: 11px;
+    bottom: -1 * ($height-1 + $height-2);
+    height: $height-2;
+  }
+}
+
+@mixin social($direction: horizontal, $gutter: 12px) {
+  font-size: 0;
+
+  a {
+
+    @if $direction == vertical {
+      display: block;
+      margin-bottom: $gutter;
+    } @else {
+      display: inline-block;
+      margin-right: $gutter;
+    }
+
+    width: 49px;
+    height: 49px;
+    line-height: 49px;
+    border: 1px solid $primary-color;
+    border-radius: 50%;
+    background-color: $primary-color;
+    text-align: center;
+
+    &:hover {
+      background-color: transparent;
+    }
+
+    svg {
+      display: inline-block;
+      vertical-align: middle;
+      fill: $white;
+      height: 24px;
+    }
+  }
+}
