@@ -74,7 +74,7 @@
     $gutter: 12px,
     $border-radius: 50%,
     $bg-color: $primary-color,
-    $hover-bg-color: transparent,
+    $hover-bg-color: #fa866d,
     $icon-color: $white) {
 
   font-size: 0;
@@ -92,7 +92,7 @@
     width: 49px;
     height: 49px;
     line-height: 49px;
-    border: 1px solid $bg-color;
+    // border: 1px solid $bg-color;
     border-radius: $border-radius;
     background-color: $bg-color;
     text-align: center;
@@ -101,11 +101,17 @@
       background-color: $hover-bg-color;
     }
 
+    &:hover svg {
+      transform: scale(1.2);
+    }
+
     svg {
       display: inline-block;
       vertical-align: middle;
       fill: $icon-color;
       height: 24px;
+
+      transition: transform .3s ease-in;
     }
   }
 }
